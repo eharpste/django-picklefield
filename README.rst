@@ -1,3 +1,5 @@
+This a modification of the original **django-picklefield** that uses the dill (https://pypi.org/project/dill/#description) library for serialization instead of the default pickle to enable a wider range of potential objects. All I have done is switch the serializing and deserializing functions in the compat.py file. There are probably some side effects and other issues from doing that but it works for my use case for the moment. I am not currently thinking of making this anything more than a one off hack for a specific project. The rest of this README is directly from the original repository.
+
 .. image:: https://travis-ci.org/gintas/django-picklefield.svg?branch=master
     :target: https://travis-ci.org/gintas/django-picklefield
 
